@@ -1,41 +1,33 @@
-Gestión de Empleados
+# Sistema de Gestión de Empleados
 
-Esta aplicación es un sistema CRUD desarrollado con Spring Boot, MySQL y un frontend en React. Su objetivo es gestionar empleados de manera sencilla y eficiente mediante una API REST.
+Este proyecto es un sistema CRUD para la gestión de empleados, desarrollado con **Spring Boot**, **MySQL** y **React**. Permite administrar empleados de manera sencilla mediante una API REST.
 
-Funcionalidades principales
+---
 
-Listar empleados con sus datos básicos.
+## Funcionalidades
 
-Agregar nuevos empleados con validaciones (nombre, sueldo, departamento).
+- Listar empleados con su información básica (nombre, departamento y sueldo).  
+- Agregar nuevos empleados con validaciones:  
+  - Nombre obligatorio y con longitud mínima.  
+  - Sueldo no negativo.  
+  - Departamento seleccionado desde un menú desplegable.  
+- Editar información de empleados existentes.  
+- Eliminar empleados de la base de datos.  
+- Integración con MySQL usando **Spring Data JPA**.  
+- Validaciones de formularios en frontend y backend.
 
-Editar la información de un empleado existente.
+---
 
-Eliminar empleados de la base de datos.
+## Tecnologías utilizadas
 
-Conexión a MySQL mediante Spring Data JPA.
+- **Backend:** Spring Boot, Spring Data JPA, MySQL  
+- **Frontend:** React + Vite  
+- **Herramientas:** Postman para pruebas de API, GitHub para control de versiones
 
-Validaciones en formularios: sueldo no negativo, nombre no vacío, y selección de departamento desde un menú desplegable.
+---
 
-Tecnologías utilizadas
+## Objetivo
 
-Backend: Spring Boot (REST API), Spring Data JPA, MySQL.
+El proyecto sirve como ejemplo práctico de integración entre backend y frontend, aplicando buenas prácticas de desarrollo, validaciones de formularios y arquitectura basada en servicios.
 
-Frontend: React + Vite.
 
-Herramientas: Postman para pruebas de API, GitHub para control de versiones.
-
-API Endpoints
-Empleados
-GET /api/empleados → Listar todos
-
-GET /api/empleados/{id} → Buscar por ID
-
-POST /api/empleados → Crear
-
-PUT /api/empleados/{id} → Actualizar
-
-DELETE /api/empleados/{id} → Eliminar
-
-Objetivo
-
-El proyecto busca servir como ejemplo práctico de integración entre backend y frontend, aplicando buenas prácticas de desarrollo, validaciones en formularios y arquitectura basada en servicios.
